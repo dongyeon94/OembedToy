@@ -10,13 +10,21 @@ public class Oembed {
     private String authorName;
     private String authorUrl;
     private String type;
-    private String height;
-    private String width;
     private String version;
     private String providerName;
     private String providerUrl;
+    private String isPlus;
+    private String htmlTag;
+    private String width;
+    private String height;
+    private String duration;
+    private String description;
     private String thumbnailHeight;
     private String thumbnailWidth;
     private String thumbnailUrl;
-    private String htmlTag;
+    private String thumbnailUrlPlay;
+    private String uploadDate;
+    private String videoId;
+    private String uri;
+
 }
