@@ -36,14 +36,6 @@
                         <td th:text="${oembed?.title}"></td>
                     </tr>
                     <tr>
-                        <td>authorName</td>
-                        <td th:text="${oembed?.authorName}"></td>
-                    </tr>
-                    <tr>
-                        <td>authorUrl</td>
-                        <td th:text="${oembed?.authorUrl}"></td>
-                    </tr>
-                    <tr>
                         <td>type</td>
                         <td th:text="${oembed?.type}"></td>
                     </tr>
@@ -60,12 +52,20 @@
                         <td th:text="${oembed?.providerUrl}"></td>
                     </tr>
                     <tr>
+                        <td>authorName</td>
+                        <td th:text="${oembed?.authorName}"></td>
+                    </tr>
+                    <tr>
+                        <td>authorUrl</td>
+                        <td th:text="${oembed?.authorUrl}"></td>
+                    </tr>
+                    <tr>
                         <td>isPlus</td>
                         <td th:text="${oembed?.isPlus}"></td>
                     </tr>
                     <tr>
                         <td>htmlTag</td>
-                        <td th:text="${oembed?.htmlTag}"></td>
+                        <td th:utext="${oembed?.htmlTag}"></td>
                     </tr>
                     <tr>
                         <td>width</td>
@@ -84,6 +84,12 @@
                         <td th:text="${oembed?.description}"></td>
                     </tr>
                     <tr>
+                        <td>thumbnailUrl</td>
+                        <td>
+                            <img th:src="${oembed?.thumbnailUrl}">
+                        </td>
+                    </tr>
+                    <tr>
                         <td>thumbnailHeight</td>
                         <td th:text="${oembed?.thumbnailHeight}"></td>
                     </tr>
@@ -92,12 +98,10 @@
                         <td th:text="${oembed?.thumbnailWidth}"></td>
                     </tr>
                     <tr>
-                        <td>thumbnailUrl</td>
-                        <td th:text="${oembed?.thumbnailUrl}"></td>
-                    </tr>
-                    <tr>
                         <td>thumbnailUrlPlay</td>
-                        <td th:text="${oembed?.thumbnailUrlPlay}"></td>
+                        <td>
+                            <a th:href="${oembed?.thumbnailUrlPlay}" th:text="${oembed?.thumbnailUrlPlay}"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td>uploadDate</td>
