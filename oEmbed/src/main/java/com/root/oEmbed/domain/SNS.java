@@ -7,7 +7,7 @@ public enum SNS {
     YOUTUBE("https://www.youtube.com/oembed?url="), 
     TWITTER("https://publish.twitter.com/oembed?url="), 
     VIMEO("https://vimeo.com/api/oembed.json?url="), 
-    INSTAGRAM("https://www.instagram.com/p/BUawPlPF_Rx/"),;
+    INSTAGRAM("https://api.instagram.com/oembed?url="),;
 
     private final String prefix;
 
